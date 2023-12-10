@@ -9,12 +9,12 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
   
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
-    --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --primary-text-color: #333333;
+    --secondary-text-color: #666666;
+    --durability-text-color: #999999;
+    --icon-color: #444444;
+    --border-color: #0077cc;
+    --text-decoration-color: #0077cc;
   }
   
   .container {
@@ -57,6 +57,7 @@
   
     .contact_info_container {
       align-items: center;
+      justify-content: space-between;
     }
   
     .contact-info__block:not(:last-child) {
@@ -112,6 +113,7 @@
   width: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .contact-info__item-icon path {
@@ -157,6 +159,7 @@
   .intro_text {
     color: var(--secondary-text-color);
     text-align: justify;
+    font-style: italic;
   }
   
   .skills__header {
@@ -201,9 +204,21 @@
     margin-left: 15px;
     margin-bottom: 25px;
   }
+
+  .experiences__company-additional-info {
+    display: flex;
+    flex-direction: column;
+  }
   
   .experiences__company-project-role {
     color: var(--durability-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .experiences__company-project-year{
+    color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 10px;
     font-size: 15px;
